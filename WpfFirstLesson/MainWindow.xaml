@@ -1,0 +1,66 @@
+﻿<Window x:Class="WpfFirstLesson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFirstLesson"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <materialDesign:Card Padding="32" Margin="60,41,50,0" Height="323" Background="#FFEA8383">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="269" Width="584" Margin="10,0,0,-10"><Run Text=" "/><InlineUIContainer>
+                    <Label Content="Меня зовут Вадим" Width="528" FontSize="16" Height="46"/>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="Мне 18 лет" Width="121" FontSize="16" Height="28"/>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="Мне скоро 19" Width="182" FontSize="16" RenderTransformOrigin="0.5,0.5" Height="41">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-12.94"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="А потом будет 20" Width="329" FontSize="16" RenderTransformOrigin="0.5,0.5" Height="95">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-18.794"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="Я учусь на разработчика" Width="448" FontSize="16" Height="28"/>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="Я люблю спать"  Width="218" FontSize="16" RenderTransformOrigin="0.494,0.603" Height="31"/>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="Сон это хорошо" Width="134" FontSize="16" RenderTransformOrigin="0.5,0.5" Height="34">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-21.481"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                </InlineUIContainer><InlineUIContainer>
+                    <Label Content="        Мне нравится, когда я сплю" Width="296" FontSize="16"/>
+                </InlineUIContainer></TextBlock>
+        </materialDesign:Card>
+
+    </Grid>
+</Window>
